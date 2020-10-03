@@ -18,6 +18,9 @@ mongoose.connect('mongodb+srv://JJ:8YOQWodT@cluster0.gqpkz.mongodb.net/JJ?retryW
             .catch(err => console.log(err));
 
 const connection = mongoose.connection;
+//rando commet
+
+console.log('rando');
 
 connection.once('open', () => {
     console.log('Connection to MongoDB successful');
