@@ -15,6 +15,7 @@ app.listen(port, () => {
 
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true})
+            .catch(err => console.log(err));
 
 const connection = mongoose.connection;
 
